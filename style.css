@@ -1,0 +1,100 @@
+.navbar a {
+    text-decoration: none;
+    
+}
+#carouselExampleControls{
+    /* height: 400px; */
+}
+.carousel-item img {
+    object-fit: cover;
+}
+.carousel-item{
+    height: 400px; 
+    width: 100%;
+    
+}
+/* General styles for the card container */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background */
+}
+
+/* Individual card styles */
+.product {
+    width: 300px; /* Set a fixed width for consistency */
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Clip content that overflows the container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add hover effect to the card */
+.product:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the image */
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    border-bottom: 1px solid #ddd;
+}
+
+/* Card body styles */
+.card-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Title styles */
+.title-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Price styles */
+.price-text {
+    font-size: 1rem;
+    color: #28a745; /* Green for price */
+    margin-bottom: 8px;
+}
+
+/* Description styles */
+.description-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+/* Button styles */
+.card-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    align-self: stretch; /* Make button full width */
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #0056b3;
+}
